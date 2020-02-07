@@ -1,4 +1,7 @@
 # RGB-Guess-Game
 RGB Guess Game
 
-#Simple RGB guess game based on pure JS
+## It's my first project based on others RGB-games found in the internet.
+
+## Technology
+HTML, CSS, JS
