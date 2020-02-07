@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: consolas;
+}
+
+*::selection {
+	background-color: transparent;
+}
+
+body {
+	background-color: #323232;
+}
+
+.header {
+	background-color: #008080;
+  margin: 0 auto;
+}
+
+.introduce {
+	color: rgba(255, 253, 252, 1);
+	font-weight: 300;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.introduce--text {
+  display: block;
+	text-transform: uppercase;
+}
+
+.rgb {
+	font-weight: 700;
+	font-size: 1.2em;
+}
+		
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	color: rgba(255, 253, 252, 1);
+}
+
+.panel {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	background-color: rgba(255, 253, 252, 1);
+	color: #008080;
+}
+
+.btn-panel {
+	padding: .5em 1em;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.panel--reset:hover {
+	background-color: #008080;
+	color: rgba(255, 253, 252, 1);
+}
+
+.panel--message{
+	cursor: default;
+}
+
+.panel--mode {
+	display: flex;
+}
+
+.mode {
+	height: 100%;
+	width: 50%;
+}
+
+.active {
+	background-color: #008080;
+	color: rgba(255, 253, 252, 1);
+}
+
+.squares {
+	margin-top: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.square {
+	position: relative;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+	margin-top: 1em;
+	border-radius: 10%;
+	background-color: gold;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+	.introduce--text {
+		font-size: 20px;
+	}
+
+	.btn-panel{
+		font-size: 14px;
+	}
+}
